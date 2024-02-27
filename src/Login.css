@@ -1,0 +1,58 @@
+.Loginimage{
+    object-fit: contain;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.Login{
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.LoginContainer>h5{
+    font-size: 1em;
+}
+.LoginContainer{
+width: 300px;
+height: fit-content;
+display: flex;
+flex-direction: column;
+border-radius: 1vh;
+border: 1px solid lightgray;
+padding: 20px;
+}
+.LoginContainer>h1{
+    text-align: center;
+}
+.LoginContainer>p{
+    font-size: 1em;
+    text-align: center;
+}
+.Sigin{
+    background:#f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+}
+.LoginContainer>input{
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}
+.register{
+    border-radius: 2px;
+    border-color: darkgray;
+    border: 1px solid;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}

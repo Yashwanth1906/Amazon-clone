@@ -21,7 +21,9 @@ export default function Headers() {
                 <span className='firstline'>
                     Hello Guest
                 </span><br/>
-                <span className='secondline'>Sign in</span>
+                <Link to="/login">
+                    <span className='secondline'>Sign in</span>
+                </Link>
             </div>
             <div className='nav-option'>
                 <span className='firstline'>
