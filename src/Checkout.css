@@ -1,0 +1,12 @@
+.checkout{
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+}
+.checkout_left{
+    width: 70vw;
+}
+.checkout_right{
+    width: 30vw;
+}

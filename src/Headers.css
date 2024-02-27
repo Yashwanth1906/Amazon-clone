@@ -1,0 +1,66 @@
+.headers{
+    height: 7vh;
+    width: 100vw;
+    background-color: #131921;;
+    z-index: 100;
+    top: 0;
+    position: sticky;
+    text-align: center;
+    display: flex;
+}
+.logo{
+    margin-left: 2vh;
+    height: 7vh;
+    width: 10vw;
+    overflow: hidden;
+}
+.amazonlogo{
+    height: 90%;
+    overflow: hidden;
+}
+.iconcontainer{
+    height: 7vh;
+    width: 5vw;
+}
+.searchicon{
+    height: 100%;
+}
+.searchbar{
+    margin-left: 2vh;
+    height: 7vh;
+    width: 58vw;
+}
+.search{
+    margin-top: 1vh;
+    height: 4vh;
+    width: 58vw;
+    border-radius: 1vh;
+    font-size: 1.2em;
+    text-align: center;
+}
+.nav{
+    display: flex;
+    height: 7vh;
+}
+.nav-option{
+    margin-top: 1vh ;
+    height: 7vh;
+    width: 5vw;
+}
+.firstline{
+    color: rgb(196, 191, 191);
+    font-size: 0.9em;
+}
+.secondline{
+    color: white;
+    font-size: 1.2em;
+}
+.basket{
+    margin-top: 0vh;
+    height: 80%;
+    overflow: hidden;
+}
+.count{
+    font-size: 1.2em;
+    color: white;
+}
