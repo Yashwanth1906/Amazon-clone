@@ -1,22 +1,31 @@
 import React, { useState } from 'react';
 import "./Login.css";
 import { Link } from 'react-router-dom';
-import { textAlign } from '@mui/system';
 import { auth } from './firebase';
 export default function Login() {
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
-    console.log(email);
     const sigin =e=>{
         e.preventDefault();
+        auth
+            .signInWithEmailAndPassword(email,password)
+            .then((auth)=>{
+                window.location.href = "/";
+    })
+            .catch(error => alert(error.message))
     }
     const register = e =>{
         e.preventDefault();
         auth
             .createUserWithEmailAndPassword(email,password)
             .then((auth)=>{
-                console.log("Success");
+                // Auth is the auth object thrown after creating an account successfully
+                if(auth)
+                {
+                    window.location.href = "/";
+                }
             })
+            .catch(error => alert(error.message))
     }
   return (
     <div className='Login'>
