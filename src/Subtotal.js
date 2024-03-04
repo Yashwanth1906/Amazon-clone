@@ -31,7 +31,7 @@ export default function Subtotal(value) {
             thousandSeparator = {true}
             prefix={"$"}
         />
-        <button className='subtotal_button'>Proceed to Checkout</button>
+        <button className='subtotal_button' onClick={e=> window.location.href = "/payment"}>Proceed to Checkout</button>
     </div>
   )
 }

@@ -2,8 +2,15 @@ import React from 'react';
 import './Headers.css';
 import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
+import { auth } from './firebase';
 export default function Headers() {
-    const [{basket},dispatch] = useStateValue();
+    const [{basket,user},dispatch] = useStateValue();
+    const handleAuthentication = () =>{
+        if(user)
+        {
+            auth.signOut();
+        }
+    }
   return (
     <div className='headers'>
         <Link to="/">
@@ -17,14 +24,14 @@ export default function Headers() {
                 <img className='searchicon' src='https://images-na.ssl-images-amazon.com/images/I/510n1ix6FHL.png'/>
         </div>
         <div className='nav'>
-            <div className='nav-option'>
+            <Link to={!user && '/login'}>
+            <div className='nav-option' onClick={handleAuthentication}>
                 <span className='firstline'>
-                    Hello Guest
+                    Hello {user?    user.email : "guest"}
                 </span><br/>
-                <Link to="/login">
-                    <span className='secondline'>Sign in</span>
-                </Link>
+                    <span className='secondline'>{user ? "Sign out":"Sign in"}</span>    
             </div>
+            </Link>
             <div className='nav-option'>
                 <span className='firstline'>
                     Returns

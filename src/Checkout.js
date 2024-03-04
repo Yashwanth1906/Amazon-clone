@@ -5,12 +5,13 @@ import { useStateValue } from './StateProvider'; // Fix typo here
 import Checkoutproduct from './Checkoutproduct';
 
 export default function Checkout() {
-  const [{basket}, dispatch] = useStateValue(); // Fix typo here
+  const [{basket,user}, dispatch] = useStateValue(); // Fix typo here
   
   return (
     <div className='checkout'>
         <div className='checkout_left'>
             <div>
+                <h3>Hello {user?.email}</h3>
                 <h2 className='title'>Your Shopping Cart</h2>
             </div>
             {basket.map(item =>(

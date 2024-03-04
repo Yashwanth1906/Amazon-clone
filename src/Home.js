@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className='Home'>
         <div className='home_container'>
-            <img className="banner" src='https://cdn.mos.cms.futurecdn.net/eN4iSfSURRn7ycTbRoia5C-1024-80.jpg'></img>
+            <img className="banner" src='https://needthat.com/wp-content/uploads/2020/09/amazon-prime-day-banner.png'></img>
             <div className='home_row'>
                 <Product id={1}desc="Titan" price={1500} image='https://rukminim1.flixcart.com/image/1664/1664/watch/8/g/6/9162sl01-titan-original-imadptzuwhgnqzmk.jpeg?q=90'
                 star={4}
